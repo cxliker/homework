@@ -126,7 +126,8 @@
 	Created by DZ Chan 2017/04/09
 	*/
 	ul#list {
-    list-style: none;
+		list-style: none;
+		padding-left: 0px;
 	}
 
 	p.date {
