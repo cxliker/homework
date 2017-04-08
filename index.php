@@ -126,7 +126,8 @@
 	Created by DZ Chan 2017/04/09
 	*/
 	ul#list {
-    list-style: none;
+		list-style: none;
+		padding-left: 0px;
 	}
 
 	p.date {
@@ -210,17 +211,25 @@
 		</div>
 	</div>	
 	<div id="main">
+
 		<div id="homework-content">
 			<div class="authorsaid">
 				<p>此网站所有源代码以上传到 <a href="https://github.com/cxliker/homework">GitHub:homework</a>，热烈欢迎各位提出Pull Requests</p>
 				<p>推荐站点：<a href="http://asm.diverse.space/">C to ASM Converter</a>(一个C语言到汇编语言的转换器)</p>
 			</div>
+			<h4>每当有新作业用邮件提醒我</h4>
 			<form class="form form-inline" id="emailForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-				<label>邮箱*：</label>
-				<input class="form-control" type="text" name="email">
-				<label>昵称：</label>
-				<input type="text" name="nickname"><br/><br/>
-				<input class="form-control" class="btn btn-default" type="submit" value="每当有新作业用邮件提醒我">
+				<div class="form-group">
+					<label>邮箱*：</label>
+					<!-- HTML5 标准支持email类型的input -->
+					<input class="form-control" type="email" name="email">
+				</div>
+				<div class="form-group">
+					<label>昵称：</label>
+					<input class="form-control" type="text" name="nickname">
+				</div>
+				<button class="btn btn-default" type="submit" value="每当有新作业用邮件提醒我">注册</button>
+				<!--<input type="hidden" name="originator" value="<?=$code?>">-->
 			</form>
 			<?php
 				if(isset($_GET['s'])){
