@@ -47,7 +47,7 @@
 	}
 
 	#homework-content{
-		width: 55%;
+		width: 65%;
 		overflow: hidden;
 		/*background: lightblue;*/
 		float: left;
@@ -144,6 +144,11 @@
 		right: 10px;
 	}
 
+	.authorsaid a {
+		text-decoration : underline;
+		color : blue;
+	}
+
 </style>
 
 <script type="text/javascript">
@@ -208,6 +213,10 @@
 	<div id="main">
 
 		<div id="homework-content">
+			<div class="authorsaid">
+				<p>此网站所有源代码以上传到 <a href="https://github.com/cxliker/homework">GitHub:homework</a>，热烈欢迎各位提出Pull Requests</p>
+				<p>推荐站点：<a href="http://asm.diverse.space/">C to ASM Converter</a>(一个C语言到汇编语言的转换器)</p>
+			</div>
 			<h4>每当有新作业用邮件提醒我</h4>
 			<form class="form form-inline" id="emailForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 				<div class="form-group">
@@ -270,6 +279,14 @@
 					}else{
 						return false;
 					}
+				}
+
+				function connectDB() {
+					$con = new mysqli("localhost","root","root","homework");
+					if($con->connect_errno)
+						die('Could not connect:'. $con->connect_error);
+					$con->query("set names utf8");
+					return $con;
 				}
 			?>
 			<ul id="list">
