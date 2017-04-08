@@ -1,0 +1,23 @@
+#history {
+    position: absolute;
+    width: 99%;
+    height: 60%;
+    overflow-y: auto;
+}
+
+#contentBox {
+    position: absolute;
+    top: 70%;
+    width: 97%;
+    height: 20%;
+}
+
+#contentBox textarea {
+    width: 100%;
+    height: 100%;
+}
+
+.error {
+    color: red;
+    display: inline;
+}
