@@ -205,13 +205,20 @@
 		</div>
 	</div>	
 	<div id="main">
+
 		<div id="homework-content">
+			<h4>每当有新作业用邮件提醒我</h4>
 			<form class="form form-inline" id="emailForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-				<label>邮箱*：</label>
-				<input class="form-control" type="text" name="email">
-				<label>昵称：</label>
-				<input type="text" name="nickname"><br/><br/>
-				<input class="form-control" class="btn btn-default" type="submit" value="每当有新作业用邮件提醒我">
+				<div class="form-group">
+					<label>邮箱*：</label>
+					<!-- HTML5 标准支持email类型的input -->
+					<input class="form-control" type="email" name="email">
+				</div>
+				<div class="form-group">
+					<label>昵称：</label>
+					<input class="form-control" type="text" name="nickname">
+				</div>
+				<button class="btn btn-default" type="submit" value="每当有新作业用邮件提醒我">注册</button>
 				<!--<input type="hidden" name="originator" value="<?=$code?>">-->
 			</form>
 			<?php
