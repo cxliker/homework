@@ -3,6 +3,7 @@
 <head>
 	<title>homework</title>
 	<link rel="shortcut icon" href="favicon.ico" />
+	<link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css" rel="stylesheet">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
 	<script>
@@ -29,7 +30,6 @@
 	}
 
 	#box{
-		background: lightgray;	
 		width: 100%;
 		/*height: 100%;*/
 	}
@@ -62,11 +62,16 @@
 	<div id="message-board">
 		<h3>留言板(正在完善)</h3>
 		<div id="message-content">
-			<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-				昵称：<input type="text" name="name">
-				<br/><br/>
-				<textarea name="content" rows="10" cols="40"></textarea><br/><br/>
-				<input type="submit">
+			<form class="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+				<div class="form-group">
+					<label>昵称：</label>
+					<input class="form-control" type="text" name="name">
+				</div>
+				<div>
+					<label>内容：</label>
+					<textarea class="form-control" name="content" rows="10" cols="40"></textarea><br/><br/>
+				</div>
+				<input class="btn btn-default" type="submit">
 			</form>
 			<?php 
 				$con = new mysqli("localhost","root","root","homework");
@@ -120,5 +125,6 @@
 <div>
 
 
+<script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 </body>
 </html>

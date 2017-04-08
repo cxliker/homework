@@ -1,9 +1,11 @@
 
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>homework</title>
 	<link rel="shortcut icon" href="favicon.ico" />
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
 	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
 	<script>
 		var _hmt = _hmt || [];
@@ -120,6 +122,27 @@
 	  z-index: -1;
 	}
 
+	/*
+	Created by DZ Chan 2017/04/09
+	*/
+	ul#list {
+    list-style: none;
+	}
+
+	p.date {
+		font-size: 1.5em;
+		font-weight: bold;
+	}
+
+	#list > li {
+		margin-bottom: 20px;
+	}
+
+	iframe {
+		width: 240px;
+		right: 10px;
+	}
+
 </style>
 
 <script type="text/javascript">
@@ -183,9 +206,12 @@
 	</div>	
 	<div id="main">
 		<div id="homework-content">
-			<form id="emailForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-				邮箱*：<input type="text" name="email">昵称：<input type="text" name="nickname"><br/><br/>
-				<input type="submit" value="每当有新作业用邮件提醒我">
+			<form class="form form-inline" id="emailForm" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+				<label>邮箱*：</label>
+				<input class="form-control" type="text" name="email">
+				<label>昵称：</label>
+				<input type="text" name="nickname"><br/><br/>
+				<input class="form-control" class="btn btn-default" type="submit" value="每当有新作业用邮件提醒我">
 				<!--<input type="hidden" name="originator" value="<?=$code?>">-->
 			</form>
 			<?php
