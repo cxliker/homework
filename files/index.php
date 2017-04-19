@@ -4,7 +4,7 @@
 	<title>homework</title>
 	<link rel="shortcut icon" href="favicon.ico" />
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+	<script src="js/jquery-3.2.0.min.js"></script>
 	<script>
 		var _hmt = _hmt || [];
 		(function() {

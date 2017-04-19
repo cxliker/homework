@@ -3,9 +3,10 @@
 <head>
 	<title>homework</title>
 	<link rel="shortcut icon" href="favicon.ico" />
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 	<link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.css" rel="stylesheet">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
 	<script>
 		var _hmt = _hmt || [];
 		(function() {
@@ -69,7 +70,7 @@
 				</div>
 				<div>
 					<label>内容：</label>
-					<textarea class="form-control" name="content" rows="10" cols="40"></textarea><br/><br/>
+					<textarea class="form-control" name="content" rows="5" cols="40"></textarea><br/>
 				</div>
 				<input class="btn btn-default" type="submit">
 			</form>

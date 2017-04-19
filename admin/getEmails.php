@@ -1,4 +1,5 @@
 <?php
+header("Content-Type:text/html;charset=utf-8");
 	$admin = false;
 	session_start();
 	if(isset($_SESSION["admin"]) && $_SESSION["admin"] === true){

@@ -4,9 +4,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>homework</title>
 	<link rel="shortcut icon" href="favicon.ico" />
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 	<link href="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
 	<script src="http://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
 	<script>
 		var _hmt = _hmt || [];
 		(function() {

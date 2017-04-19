@@ -1,6 +1,7 @@
 
 <?php
 	include_once("authority.php");
+	header("Content-Type:text/html;charset=utf-8");
 	
 	$con = connectDB();
 					

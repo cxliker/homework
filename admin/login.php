@@ -6,6 +6,7 @@ Password:<input type="password" name="password">
 </form>
 
 <?php
+header("Content-Type:text/html;charset=utf-8");
 	if($_SERVER['REQUEST_METHOD']== 'POST'){
 		$user = $_POST['user'];
 		$password = $_POST['password'];

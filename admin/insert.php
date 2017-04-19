@@ -1,5 +1,5 @@
 <?php include_once("authority.php"); ?>
-
+header("Content-Type:text/html;charset=utf-8");
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
 
 <script type="text/javascript">
